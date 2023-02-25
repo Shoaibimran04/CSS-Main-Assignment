@@ -1,0 +1,172 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+/* All main headings  */
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+
+[role=banner]{
+	padding-top: 1em;
+	padding-bottom: 4em;
+	background-image: url("./dark.jpg");
+	filter: saturate(80%);
+	z-index: 9999;
+}
+
+h1{
+	font-size: 50px;
+	color: white;
+	padding-left: 5em;
+	text-transform: uppercase;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+h2{
+	font-size: 20px;
+	padding-left: 13em;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Background gradient */
+#css-zen-garden{
+	background-image: linear-gradient(#fefefe, #f5f5f5);
+}
+
+.wrapper{
+	padding-top: 3em;
+}
+
+/* Design name CSS ( 1: Font Gill sans )*/
+
+a{
+	text-decoration: none;
+	color: #404040;
+	font-weight: bold;
+}
+
+a:hover{
+	transition: 0.3s;
+	color: lightslategray;
+}
+
+.design-name{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Second paragrapgh elements (2: EB Garamond)  */
+
+.preamble{
+	font-size: large;
+	padding-left: 4em;
+	width: 60%;
+}
+.preamble h3{
+	font-size: 2em;
+	font-family: 'EB Garamond', serif;
+	font-weight: lighter;
+}
+
+/* Third paragrapgh elements */
+
+.mainsupporting{
+	font-size: large;
+	padding-left: 4em;
+	width: 60%;
+}
+
+/* Decendant selector */
+
+.mainsupporting h3{
+	font-size: 2em;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+}
+
+/* Sidebar and Nav  */
+
+.sidebar{
+	background-color: #fff;
+	position: absolute;
+	top: 40%;
+	bottom: 0;
+	height: 100em;
+	width: 326px;
+	overflow: hidden;
+	right: 0;
+	padding-left: 1em;
+}
+
+ul li a {
+	list-style-type: none;
+	text-transform: uppercase;
+
+}
+ul{
+	list-style-type: none;
+	padding-top: 5px;
+}
+
+nav ul{
+	position: relative;
+	background: #fff;
+}
+nav ul li{
+	padding: 10px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+	transition: transform 0.5;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+nav ul li:hover{
+	transform: scale(1.1);
+	z-index: 100;
+	background: #25bcff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.2);
+	color: #fff;
+}
+
+aside h3{
+	font-size: 25px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'EB Garamond', serif;
+	font-weight: lighter;
+}
+
+/* Footer elements (Pseudo-class selector)*/
+
+.footer{
+	background-color: #404040;
+	align-items: center;
+	width: 145%;
+	height: 80px;
+	padding: 3em 1em 0 0em;
+}
+.footer a:hover{
+	color: #25bcff;
+	font-size: 30px;
+}
+.footer a {
+	color: #fff;
+	padding: 10px 20px;
+	padding-left: 50px;
+	font-size: 2em;
+}
